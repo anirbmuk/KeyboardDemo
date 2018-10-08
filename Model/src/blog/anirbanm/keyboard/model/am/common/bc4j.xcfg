@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!---->
+<BC4JConfig xmlns="http://xmlns.oracle.com/bc4j/configuration" version="11.1">
+  <AppModuleConfigBag ApplicationName="blog.anirbanm.keyboard.model.am.KeyboardModule">
+    <AppModuleConfig name="KeyboardModuleLocal" jbo.project="blog.anirbanm.keyboard.model.Model"
+                     ApplicationName="blog.anirbanm.keyboard.model.am.KeyboardModule" DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="jdbc/HrDS"/>
+      <Security AppModuleJndiName="blog.anirbanm.keyboard.model.am.KeyboardModule"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="KeyboardModuleShared" jbo.project="blog.anirbanm.keyboard.model.Model"
+                     ApplicationName="blog.anirbanm.keyboard.model.am.KeyboardModule" DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="jdbc/HrDS"/>
+      <Security AppModuleJndiName="blog.anirbanm.keyboard.model.am.KeyboardModule"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+</BC4JConfig>
